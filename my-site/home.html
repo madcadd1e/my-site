@@ -1,0 +1,104 @@
+<head>
+<title>Chris Carpio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="media/images/favicon.ico" rel="Icon" type="image/x-icon"/>
+
+
+ <!-- Scripts/styles -->
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/font-awesome/all.min.js"></script>
+<link rel="stylesheet" href="scripts/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="styles/vendors/bootstrap.min.css">
+<link rel="stylesheet" href="styles/common.css">
+<!--- font -->
+<link href="https://fonts.googleapis.com/css?family=Poiret+One|Quicksand:400,700" rel="stylesheet">
+
+</head>
+<!-- Start -->
+<body>
+
+<div class="header"></div>
+
+<div class="homebody">
+  <div class="homebody__top">
+    <ul class="nav justify-content-center homebody__top--items">
+      <li class="nav-item">
+          <a id="home" class="nav-link nav-link--home btn"><i class="fas fa-home"></i></a>
+      </li>
+      <li class="nav-item">
+          <a id="about" class="nav-link btn">About</a>
+      </li>
+      <li class="nav-item">
+          <a id="work" class="nav-link btn">Work</a>
+      </li>
+      <li class="nav-item">
+          <a id="contact" class="nav-link btn">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <div class="homebody--bg">
+    <div class="homebody--overlay"></div>
+    <video loop muted autoplay class="homebody--bg__video">
+        <source src="media/vid/bg.webm" type="video/webm">
+        <source src="media/vid/bg.mp4" type="video/mp4">
+        <source src="media/vid/bg.ogv" type="video/ogg">
+    </video>
+  </div>
+  <div class="homebody__mainblock">
+    <div id="block" class="homebody__title hide">
+        Home Page
+    </div>
+  </div>
+</div>
+
+<script type = "text/javascript">
+
+  $(document).ready(function(){
+
+    $( "#home" ).click(function() {
+      $( "#block" ).fadeOut( "600", function() {
+        $( "#block" ).addClass('hide');
+      });
+    });
+
+
+    $( "#about" ).click(function() {
+      $( "#block" ).fadeOut( "600", function() {
+        
+        $( "#block" ).html( "<h1 class='homebody__title--name'>Christian Carpio</h1><div class='homebody__title--sub'>Web Developer | QA | Support</div><div class='homebody__title--blurb row align-items-center'><div class='col-md-8'><div class='bio_about'>With over 5+ years experience as a full stack developer, I am adaptive to any work environment and I am both comfortable making decisions and following directions. I am passionate about what I do and always looking for more opportunities to learn and enhance my skills. I have experience with client interaction on all levels, and always provide a professional and great experience.</div></div><div class='col-md-4'><img class='bio__image' src = 'media/portrait.jpeg' /></div></div>").fadeIn("600");
+      });
+    });
+
+    $('#work').click(function(){
+      $( "#block" ).fadeOut( "600", function() {
+        $( "#block" ).html( "<h1 class='homebody__title--name'>Work</h1><div class='homebody__title--blurb'><p>Below is a short list of projects I have worked on. Due to security reasons Congressional websites will not be hyperlinked.</p><ul class='list-group'><li class='list-group-item'>harris.senate.gov</li><li class='list-group-item'>crapo.senate.gov</li><li class='list-group-item'>shaheen.senate.gov</li><li class='list-group-item'>rules.senate.gov</li><li class='list-group-item'>lujan.house.gov</li><li class='list-group-item'>dems.gov</li><li class='list-group-item'>saludcarbajal.com</li><li class='list-group-item'>Can provide more upon request...</li></div>" ).fadeIn("600");
+      });
+    });
+
+    $('#contact').click(function(){
+      $( "#block" ).fadeOut( "600", function() {
+     
+        $( "#block" ).html( "<h1 class='homebody__title--name'>Contact Me</h1><div class='homebody__title--blurb'><div class='row justify-content-xs-center justify-content-sm-center contact'><div class='col-sm-2 col contact__sociallink'><a href='https://www.linkedin.com/in/christiancarpio17/' class='contact__sociallink--link contact__sociallink--linkedin'><i class='fab fa-linkedin-in'></i></a></div><div class='col-sm-2 col contact__sociallink'><a target='_blank' href='media/resume/ChrisResume19.pdf' class='contact__sociallink--link contact__sociallink--resume'><i class='far fa-file-alt'></i></a></div><div class='col-sm-2 col contact__sociallink'><a href='mailto:christian.carpio86@gmail.com' class='contact__sociallink--link contact__sociallink--email'><i class='fas fa-envelope'></i></a></div></div></div>" ).fadeIn("600");
+      });
+    });
+
+  });
+
+</script>
+
+</ul>
+
+
+<footer></footer>
+
+<!-- START: Mobile Autoplay Video -->
+<script>
+var mobilevideo = document.getElementsByTagName("video")[0];
+mobilevideo.setAttribute("playsinline", "");
+mobilevideo.setAttribute("muted", "");
+</script>
+<!-- END: Mobile Autoplay Video -->
+<!-- end -->
+</body>
+</html>

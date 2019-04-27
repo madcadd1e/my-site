@@ -1,0 +1,190 @@
+.homebody {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding: 1rem;
+}
+.homebody__top--items {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 2rem;
+}
+.homebody__top--items .nav-item .nav-link {
+  font-family: "Poiret One", cursive;
+  color: white;
+  font-weight: 800;
+  margin: 0px 5px;
+  padding: 5px 10px;
+  color: yellow;
+  border: 1px solid transparent;
+}
+.homebody__top--items .nav-item .nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+.homebody__top--items .nav-item .nav-link--home {
+  padding: 9px;
+}
+.homebody__mainblock {
+  display: table-cell;
+  width: 100%;
+  vertical-align: middle;
+  padding: 5rem 2rem;
+}
+.homebody__title {
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  position: relative;
+  z-index: 10;
+  padding: 3rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.homebody__title--name {
+  font-family: "Poiret One", cursive;
+  text-align: left;
+  display: block;
+  border-bottom: 1px solid yellow;
+  padding-bottom: 5px;
+}
+@media (max-width: 767px) {
+  .homebody__title--name {
+    font-size: 24px;
+  }
+}
+.homebody__title--sub {
+  display: inline-block;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.homebody__title--sub a {
+  display: inline-block;
+  color: white;
+}
+.homebody__title--sub a:hover {
+  color: yellow;
+  text-decoration: none;
+}
+@media (max-width: 767px) {
+  .homebody__title--blurb .bio__about {
+    margin-bottom: 1rem;
+  }
+}
+.homebody__title--blurb .bio__image {
+  width: 100%;
+  border-radius: 15px;
+  opacity: 0.9;
+  display: block;
+}
+@media (max-width: 767px) {
+  .homebody__title--blurb .bio__image {
+    max-width: 220px;
+    margin: 1rem auto;
+  }
+}
+.homebody__title--blurb .contact {
+  padding: 2rem 0;
+}
+.homebody__title--blurb .contact__sociallink {
+  text-align: center;
+}
+.homebody__title--blurb .contact__sociallink--link {
+  color: #272028;
+  font-size: 50px;
+  transition: all 0.2s ease-in-out;
+  background-color: white;
+  display: table-cell;
+  height: 70px;
+  width: 70px;
+  vertical-align: middle;
+  border-radius: 10px;
+}
+.homebody__title--blurb .contact__sociallink--link:hover {
+  transform: scale(1.2);
+}
+@media (max-width: 767px) {
+  .homebody__title--blurb .contact__sociallink--link {
+    font-size: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .homebody__title--blurb .contact__sociallink--link {
+    height: 50px;
+    width: 50px;
+    font-size: 26px;
+    margin: 0 auto;
+  }
+}
+.homebody__title--blurb .list-group .list-group-item {
+  position: relative;
+  display: block;
+  padding: 5px 0px;
+  margin-bottom: 0px;
+  background-color: transparent;
+  border: 0;
+}
+@media (max-width: 575px) {
+  .homebody__title {
+    padding: 1.5rem;
+  }
+}
+.homebody--overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: block;
+  position: absolute;
+  z-index: 5;
+}
+
+.hide {
+  display: none;
+}
+
+.homebody--bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+@media (max-width: 767px) {
+  .homebody--bg {
+    background: url("../media/vid/bg.jpg") center center/cover no-repeat;
+  }
+}
+.homebody--bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media (min-aspect-ratio: 16/9) {
+  .homebody--bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .homebody--bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}
+@media (max-width: 767px) {
+  .homebody--bg__video {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=common.css.map */

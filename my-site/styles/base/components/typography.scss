@@ -1,0 +1,14 @@
+@mixin primary-font{
+    font-family: 'Quicksand', sans-serif;
+}
+
+@mixin primary-font-bold{
+
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+
+}
+
+@mixin secondary-font{
+    font-family: 'Poiret One', cursive;
+}
